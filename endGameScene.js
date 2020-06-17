@@ -3,8 +3,8 @@ class EndGameScene extends Phaser.Scene {
     super('EndGameScene')
   }
   preload() {
-    this.load.image('winGame', 'assets/winGame.png')
-    this.load.image('loseGame', 'assets/loseGame.png')
+    this.load.image('winGame', 'winGame.png')
+    this.load.image('loseGame', 'loseGame.png')
   }
   create() {
     if (gameWon) {
