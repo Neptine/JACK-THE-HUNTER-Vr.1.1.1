@@ -3,7 +3,7 @@ class StartScene extends Phaser.Scene {
     super('StartScene')
   }
   preload() {
-    this.load.image('start', 'assets/startScreen.png')
+    this.load.image('start', 'startScreen.png')
   }
   create() {
     this.add.image(windowWidth / 2, windowHeight / 2, 'start')
@@ -23,14 +23,14 @@ class GameScene extends Phaser.Scene {
     this.time = 0
   }
   preload() {
-    this.load.image('player', 'assets/player.png')
-    this.load.image('zombie', 'assets/headcrab.png')
-    this.load.image('block', 'assets/blocks.png', { frameWidth: 128 })
-    this.load.image('floor', 'assets/floor.png', { frameWidth: 128 })
-    this.load.image('startFloor', 'assets/startFloor.png', { frameWidth: 128 })
-    this.load.image('endFloor', 'assets/endFloor.png', { frameWidth: 128 })
-    this.load.image('reticle', 'assets/reticle.png')
-    this.load.image('bullet', 'assets/bullet.png')
+    this.load.image('player', 'player.png')
+    this.load.image('zombie', 'headcrab.png')
+    this.load.image('block', 'blocks.png', { frameWidth: 128 })
+    this.load.image('floor', 'floor.png', { frameWidth: 128 })
+    this.load.image('startFloor', 'startFloor.png', { frameWidth: 128 })
+    this.load.image('endFloor', 'endFloor.png', { frameWidth: 128 })
+    this.load.image('reticle', 'reticle.png')
+    this.load.image('bullet', 'bullet.png')
   }
   create() {
     this.addGroups()
@@ -178,8 +178,8 @@ class EndGameScene extends Phaser.Scene {
     super('EndGameScene')
   }
   preload() {
-    this.load.image('winGame', 'assets/winGame.png')
-    this.load.image('loseGame', 'assets/loseGame.png')
+    this.load.image('winGame', 'winGame.png')
+    this.load.image('loseGame', 'loseGame.png')
   }
   create() {
     if (gameWon) {
