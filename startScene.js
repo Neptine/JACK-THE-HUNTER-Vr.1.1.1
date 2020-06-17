@@ -3,7 +3,7 @@ class StartScene extends Phaser.Scene {
       super('StartScene')
     }
     preload() {
-      this.load.image('start', 'assets/startScreen.png')
+      this.load.image('start', 'startScreen.png')
     }
     create() {
       this.add.image(windowWidth / 2, windowHeight / 2, 'start')
